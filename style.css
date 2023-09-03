@@ -392,12 +392,12 @@ footer a {
   /* Flowing conversations section order */
   .gt .desc-gfy,
   .yu .desc-gfy {
-    order: 2;
+    order: 1;
   }
 
   .gt .i-fc,
   .yu .i-yu {
-    order: 1;
+    order: 2;
   }
   /* End flowing conversations section order */
 

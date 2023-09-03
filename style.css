@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+
+  /* Neutral */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+body {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7em;
+  font-size: 0.8em;
+}
+
+.bs {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile / General */
+/* Main hero */
+/* Background hero */
+.bg-hero {
+  background-color: var(--very-pale-cyan);
+  background-image: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+/* End background hero */
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+}
+
+nav a {
+  padding: 0.7em 3.5em;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+nav a:hover {
+  color: var(--grayish-blue);
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+/* End navbar */
+
+.main-hero-content {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 30px;
+  height: 81vh;
+}
+
+.desc {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.i-mockups {
+  width: 80%;
+}
+
+.i-mockups img {
+  width: 100%;
+}
+
+.btn-get-started a,
+.btn-offer a {
+  width: max-content;
+  display: inline-block;
+  background-color: var(--pink);
+  padding: 1em 5em;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-get-started a:hover,
+.btn-offer a:hover {
+  background-color: hsla(322, 100%, 66%, 0.5);
+}
+/* End hero section */
+/* End main hero */
+
+/* Grow together section, flowing conversations section, your users section */
+.gt,
+.fc,
+.yu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  margin-top: 10%;
+  border-radius: 10px;
+  row-gap: 50px;
+}
+
+.fc,
+.yu {
+  margin-top: 3%;
+}
+
+/* Flowing conversations section order */
+.desc-gfy {
+  order: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.i-fc {
+  order: 1;
+}
+/* End flowing conversations section order */
+
+.i-gt,
+.i-fc,
+.i-yu {
+  width: 100%;
+}
+
+.desc-gfy p {
+  color: var(--grayish-blue);
+  margin-top: 1em;
+}
+
+.i-gt img,
+.i-fc img,
+.i-yu img {
+  width: 100%;
+}
+/* End grow together section, flowing conversations section, your users section */
+
+/* Footer box */
+.footer-box {
+  background-color: var(--very-dark-cyan);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 60%;
+}
+
+/* Offer box */
+.offer-box {
+  width: 90%;
+  position: absolute;
+  top: -15%;
+  padding: 2em 0;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-offer a {
+  margin-top: 1.3em;
+}
+/* End offer box */
+
+/* Contact, menu, socmed */
+.cms {
+  display: grid;
+  color: white;
+  margin-top: 35%;
+  width: 90%;
+  column-gap: 10%;
+}
+
+/* Left section */
+.left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.7em;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+}
+
+.contact svg {
+  margin: auto;
+}
+/* End left section */
+
+/* Middle section */
+.middle .menu {
+  display: grid;
+  margin-top: 15%;
+  row-gap: 20px;
+}
+
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  width: max-content;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+/* End Middle section */
+
+/* Right section */
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+.socmed {
+  display: flex;
+  column-gap: 25px;
+}
+
+.facebook svg,
+.twitter svg,
+.instagram svg {
+  border: 1px solid white;
+  height: max-content;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-socmed:hover {
+  fill: var(--pink);
+  border-color: var(--pink);
+}
+
+.facebook svg {
+  padding: 10px 15px;
+}
+
+.twitter svg,
+.instagram svg {
+  padding: 10px;
+}
+
+.socmed img {
+  width: 100%;
+}
+/* End right section */
+/* End contact, menu, socmed */
+/* End footer box */
+
+/* Footer */
+footer p {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+footer a {
+  color: hsl(228, 100%, 75%);
+}
+/* End footer */
+/* End Mobile / General */
+
+/* ================================================================================= */
+
+/* Responsive */
+@media screen and (min-width: 500px) {
+  nav a {
+    font-size: 1em;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .footer-box {
+    margin-top: 40%;
+  }
+
+  .offer-box {
+    top: -10%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    width: max-content;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .desc-gfy h1,
+  .desc h1 {
+    font-size: 2em;
+  }
+
+  .desc-gfy p,
+  .desc p {
+    font-size: 1em;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 1000px) {
+  .hero {
+    flex-direction: row;
+    row-gap: 0;
+    text-align: left;
+    height: 81vh;
+    row-gap: 0;
+  }
+
+  .desc {
+    width: 35%;
+  }
+
+  .i-mockups {
+    width: 60%;
+  }
+
+  .gt,
+  .fc,
+  .yu {
+    flex-direction: row;
+    padding: 6em;
+  }
+
+  /* Flowing conversations section order */
+  .gt .desc-gfy,
+  .yu .desc-gfy {
+    order: 2;
+  }
+
+  .gt .i-fc,
+  .yu .i-yu {
+    order: 1;
+  }
+  /* End flowing conversations section order */
+
+  .i-gt,
+  .i-fc,
+  .i-yu {
+    width: 40%;
+  }
+
+  .desc-gfy {
+    width: 45%;
+    text-align: left;
+  }
+  h1,
+  .desc-gfy h1,
+  .desc h1 {
+    font-size: 1.5em;
+  }
+
+  p,
+  a,
+  .desc-gfy p,
+  .desc p {
+    font-size: 0.8em;
+  }
+
+  /* Footer box */
+  .footer-box {
+    margin-top: 30%;
+  }
+
+  /* Offer box */
+  .offer-box {
+    width: 70%;
+    position: absolute;
+    top: -25%;
+    padding: 2.5em 0;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  /* End offer box */
+
+  /* Contact, menu, socmed */
+  .cms {
+    margin-top: 12%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+  }
+
+  /* Middle section */
+  .middle .menu {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+  /* End Middle section */
+
+  /* Right section */
+  .right {
+    align-items: flex-start;
+    height: 50vh;
+  }
+
+  .socmed {
+    column-gap: 25px;
+    margin-top: 15%;
+  }
+
+  .copyright {
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
+  /* End right section */
+  /* End contact, menu, socmed */
+  /* End footer box */
+}
+
+/* End Tablet */
+
+/* ================================================================================= */
+
+/* Desktop */
+@media screen and (min-width: 1220px) {
+  /* Background hero */
+  .bg-hero {
+    background-image: url(images/bg-hero-desktop.svg);
+  }
+  /* End background hero */
+
+  .hero {
+    flex-direction: row;
+    row-gap: 0;
+    text-align: left;
+    height: 81vh;
+    row-gap: 0;
+  }
+
+  .desc {
+    width: 35%;
+  }
+
+  .i-mockups {
+    width: 60%;
+  }
+
+  .gt,
+  .fc,
+  .yu {
+    flex-direction: row;
+    padding: 6em;
+  }
+
+  .i-gt,
+  .i-fc,
+  .i-yu {
+    width: 40%;
+  }
+
+  .desc-gfy {
+    width: 45%;
+    text-align: left;
+  }
+
+  h1,
+  .desc-gfy h1,
+  .desc h1 {
+    font-size: 2em;
+  }
+
+  p,
+  a,
+  .desc-gfy p,
+  .desc p {
+    font-size: 1em;
+  }
+
+  /* Footer box */
+  .footer-box {
+    margin-top: 25%;
+  }
+
+  /* Offer box */
+  .offer-box {
+    width: 70%;
+    position: absolute;
+    top: -20%;
+    padding: 2.5em 0;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+  /* End offer box */
+
+  /* Contact, menu, socmed */
+  .cms {
+    margin-top: 12%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+  }
+
+  /* Middle section */
+  .middle .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+  }
+  /* End Middle section */
+
+  /* Right section */
+  .right {
+    justify-content: space-between;
+    height: 50vh;
+  }
+
+  .socmed {
+    column-gap: 25px;
+    margin-top: 15%;
+  }
+
+  .copyright {
+    margin-top: 50%;
+    margin-bottom: 10%;
+  }
+  /* End right section */
+  /* End contact, menu, socmed */
+}
+/* End Desktop */
+/* End Responsive */
